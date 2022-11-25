@@ -1,10 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { ThemeProvider } from 'styled-components';
+import App from './App';
+import { GlobalStyles } from './components/particles/GlobalStyles';
+import { Theme } from './components/particles/Theme';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
+  <ThemeProvider theme={Theme}>
+    <GlobalStyles />
     <App />
-  </React.StrictMode>
-)
+  </ThemeProvider>
+);
