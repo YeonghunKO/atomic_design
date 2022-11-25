@@ -4,9 +4,9 @@ import Nav from '@components/molecules/Nav/Nav';
 
 function App() {
   const items = [
-    { href: '#', text: 'home' },
-    { href: '#', text: 'about me' },
-    { href: '#', text: 'contact' },
+    { url: '#', text: 'home' },
+    { url: '#', text: 'about me' },
+    { url: '#', text: 'contact' },
   ];
   return (
     <>
