@@ -1,10 +1,10 @@
 import styled, { DefaultTheme } from 'styled-components';
 
-type Props = {
+interface Props {
   theme: DefaultTheme;
   variant?: string;
   href?: string;
-};
+}
 
 const buttonBackground = (props: Props) => {
   // Fallback value if we can't get access to props

@@ -34,7 +34,7 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
+const Button = ({
   children,
   onClick,
   variant,
@@ -62,3 +62,5 @@ export const Button = ({
     </StyledLinkButton>
   );
 };
+
+export default Button
