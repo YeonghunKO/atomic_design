@@ -1,6 +1,4 @@
-const path = require('path');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
-
 module.exports = {
   stories: [
     '../src/**/*.stories.mdx',
@@ -17,5 +15,15 @@ module.exports = {
   },
   features: {
     storyStoreV7: true,
+  },
+  webpackFinal: async config => {
+    config.resolve.plugins.push(new TsconfigPathsPlugin({}));
+
+    config.module.rules.unshift({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
+
+    return config;
   },
 };
