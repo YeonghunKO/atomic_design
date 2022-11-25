@@ -1,10 +1,12 @@
 import React from 'react';
 
 import StyledNavigation from './Nav.styles';
+import Icon, {type IconsKey} from '../../Icons/Icon'
 
 type Item = {
-  href: string;
+  url: string;
   text: string;
+  icon?:keyof IconsKey | any
 };
 
 interface Props {
@@ -15,13 +17,16 @@ interface Props {
 const Nav = ({ direction, items }: Props) => {
   return (
     <StyledNavigation direction={direction}>
-      {items.map(({ href, text }, ind) => (
-        <a key={ind} href={href}>
-          {text}
+      {items.map(({ url, text,icon }, ind) => (
+        <a className='nav__anchor' key={ind} href={url}>
+          {icon && <Icon icon={icon} marginRight='5px'/>} {text}
         </a>
       ))}
     </StyledNavigation>
   );
 };
+
+
+
 
 export default Nav;

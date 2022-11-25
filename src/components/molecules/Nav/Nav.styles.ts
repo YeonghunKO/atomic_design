@@ -12,5 +12,12 @@ const StyledNavigation = styled.nav<Props>`
     ${({ direction }) =>
       direction === 'horizontal' ? 'margin-right:10px;' : 'margin-top:10px;'};
   }
+
+  .nav__anchor {
+    display: inline-flex;
+  }
 `;
+
+const StyledNavigationIcon = styled.span``;
+
 export default StyledNavigation;
