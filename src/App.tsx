@@ -1,12 +1,16 @@
 import { useState } from 'react';
-import { Button } from '@components/atoms/Button/Button';
+// import { Button } from '@components/atoms/Button/Button';
+import Nav from '@components/molecules/Nav/Nav';
 
 function App() {
+  const items = [
+    { href: '#', text: 'home' },
+    { href: '#', text: 'about me' },
+    { href: '#', text: 'contact' },
+  ];
   return (
     <>
-      <Button variant="secondary" icon="User">
-        Basic
-      </Button>
+      <Nav direction="vertical" items={items} />
     </>
   );
 }
