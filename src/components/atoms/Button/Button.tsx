@@ -1,6 +1,7 @@
 import React, { type ReactNode } from 'react';
 import StyledButton, { StyledLinkButton } from "./button.styles";
-import Icons from '../../Icons'
+import Icon , {type IconsKey} from '../../Icons/Icon'
+
 
 interface ButtonProps {
   children:ReactNode;
@@ -27,7 +28,7 @@ interface ButtonProps {
   * Type of button
   */
  variant?:string;
- icon?:keyof typeof Icons;
+ icon?:keyof IconsKey;
   [key: string]: any;
 }
 
@@ -47,11 +48,11 @@ const Button = ({
   icon,
   ...props
 }: ButtonProps) => {
-  const Icon = Icons[icon!]
+
   if (!href) {
     return (
       <StyledButton onClick={onClick} variant={variant}>
-        <Icon width='1.5rem' height='1.5rem' marginRight='5px'/>
+        <Icon icon={icon!} marginRight='5px'/>
         {children}
       </StyledButton>
     );
