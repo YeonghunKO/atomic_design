@@ -1,16 +1,23 @@
 import { useState } from 'react';
-// import { Button } from '@components/atoms/Button/Button';
-import Nav from '@components/molecules/Nav/Nav';
-
+import Footer from './components/organism/Footer/Footer';
 function App() {
-  const items = [
-    { url: '#', text: 'home' },
-    { url: '#', text: 'about me' },
-    { url: '#', text: 'contact' },
+  const menu = [
+    {
+      title: 'Menu1',
+      item: [{ url: '#', text: 'home' }],
+    },
+    {
+      title: 'Menu2',
+      item: [{ url: '#', text: 'about me' }],
+    },
+    {
+      title: 'Menu3',
+      item: [{ url: '#', text: 'contact' }],
+    },
   ];
   return (
     <>
-      <Nav direction="vertical" items={items} />
+      <Footer menu={menu} />
     </>
   );
 }
