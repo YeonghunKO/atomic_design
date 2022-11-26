@@ -2,6 +2,8 @@ import 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
+    flexCenter: ThemedCssFunction;
+    flexColumn: ThemedCssFunction;
     gridMax: '1440px';
     /* Colours */
     white: '#ffffff';

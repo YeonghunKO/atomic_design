@@ -44,6 +44,7 @@ const GlobalStyles = createGlobalStyle`
 		font-size: 1.6rem;
 		line-height: 1.5;
 		scroll-behavior: smooth;
+		margin:0;
 	}
 	main {
 		flex: 1;

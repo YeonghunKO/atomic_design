@@ -1,6 +1,15 @@
-import { DefaultTheme } from 'styled-components';
+import { css, DefaultTheme } from 'styled-components';
 
 const Theme: DefaultTheme = {
+  flexCenter: css`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  `,
+  flexColumn: css`
+    display: flex;
+    flex-direction: column;
+  `,
   gridMax: '1440px',
   /* Colours */
   white: '#ffffff',
