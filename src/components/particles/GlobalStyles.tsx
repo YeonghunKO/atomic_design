@@ -2,10 +2,10 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
     
-	html {
+    html {
 		color: black;
-	  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Roboto, Oxygen,
+Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 		font-size: 62.5%;
 		/* BETTER FONT SMOOTHING - https://gist.github.com/hsleonis/55712b0eafc9b25f1944 */
 		font-variant-ligatures: none;
@@ -216,7 +216,16 @@ const GlobalStyles = createGlobalStyle`
 		font-weight: 300;
 		line-height: 20px;
 	}
-
+	.hide:not(:focus):not(:active),
+	.hidden:not(:focus):not(:active) {
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
 `;
 
 export { GlobalStyles };
