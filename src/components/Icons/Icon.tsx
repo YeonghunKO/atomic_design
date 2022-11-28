@@ -10,12 +10,17 @@ interface Props {
 }
 
 const IconComponent = ({
-  width = '1.5rem',
-  height = '1.5rem',
+  width = '2.5rem',
+  height = '2.5rem',
   icon,
   ...props
 }: Props) => {
   const Icon = Icons[icon];
+
+  if (!Icon) {
+    return null;
+  }
+
   return <Icon width={width} height={height} {...props} />;
 };
 
