@@ -1,5 +1,3 @@
-import React from 'react';
-
 import StyledNavigation from './Nav.styles';
 import Icon, {type IconsKey } from '@components/Icons/Icon';
 
@@ -22,6 +20,7 @@ const Nav = ({ direction, items }: Props) => {
           {icon ? <Icon icon={icon} marginRight="5px" /> : <span>{text}</span>}
         </a>
       ))}
+     
     </StyledNavigation>
   );
 };
