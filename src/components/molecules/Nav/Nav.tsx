@@ -1,18 +1,8 @@
 import StyledNavigation from './Nav.styles';
-import Icon, {type IconsKey } from '@components/Icons/Icon';
+import Icon from '@components/Icons/Icon';
+import type { NavProps } from '@src/types/Nav';
 
-type Item = {
-  url: string;
-  text: string;
-  icon?: keyof IconsKey | any;
-};
-
-interface Props {
-  direction: string;
-  items: Item[];
-}
-
-const Nav = ({ direction, items }: Props) => {
+const Nav = ({ direction, items }: NavProps) => {
   return (
     <StyledNavigation direction={direction}>
       {items.map(({ url, text, icon }, ind) => (
@@ -20,7 +10,6 @@ const Nav = ({ direction, items }: Props) => {
           {icon ? <Icon icon={icon} marginRight="5px" /> : <span>{text}</span>}
         </a>
       ))}
-     
     </StyledNavigation>
   );
 };

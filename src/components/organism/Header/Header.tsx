@@ -3,17 +3,7 @@ import StyledHeader from './Header.styles';
 import CelticLogo from '@src/assets/Celtic_FC.png';
 import Nav from '@src/components/molecules/Nav/Nav';
 import Button from '@src/components/atoms/Button/Button';
-
-type ItemKey = 'url' | 'text' | 'icon';
-
-type Navigation = {
-  title: string;
-  items: Record<ItemKey, string | any>[];
-};
-
-interface HeaderProps {
-  navigation: Navigation[];
-}
+import type { HeaderProps } from '@src/types/Header';
 
 const Header = ({ navigation }: HeaderProps) => {
   const [isMenu, setIsMenu] = useState(false);

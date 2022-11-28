@@ -2,14 +2,7 @@ import React from 'react';
 import Nav from '@src/components/molecules/Nav/Nav';
 import StyledFooter from './Footer.styles';
 
-type Menu = {
-  title: string;
-  item: { url: string; text: string }[];
-};
-
-interface FooterProps {
-  menu: Menu[];
-}
+import type { FooterProps } from '@src/types/Footer';
 
 const Footer = ({ menu }: FooterProps) => {
   return (

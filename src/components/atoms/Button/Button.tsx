@@ -1,36 +1,6 @@
-import React, { type ReactNode } from 'react';
-import StyledButton, { StyledLinkButton } from "./button.styles";
-import Icon , {type IconsKey} from '@components/Icons/Icon'
-
-
-interface ButtonProps {
-  children:ReactNode;
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * Optional click handler
-   */
-  onClick?: (e:React.MouseEvent<HTMLButtonElement>) => void;
-
-  href?: string;
-  
-   /**
-   * Button contents
-   */
-
-  /**
-  * Type of button
-  */
- variant?:string;
- icon?:keyof IconsKey;
-  [key: string]: any;
-}
+import StyledButton, { StyledLinkButton } from './button.styles';
+import Icon from '@components/Icons/Icon';
+import type { ButtonProps } from '@src/types/Buttons';
 
 /**
  * Primary UI component for user interaction
@@ -48,11 +18,10 @@ const Button = ({
   icon,
   ...props
 }: ButtonProps) => {
-
   if (!href) {
     return (
       <StyledButton onClick={onClick} variant={variant}>
-        <Icon icon={icon!} marginRight='5px'/>
+        <Icon icon={icon!} marginRight="5px" />
         {children}
       </StyledButton>
     );
@@ -64,4 +33,4 @@ const Button = ({
   );
 };
 
-export default Button
+export default Button;
