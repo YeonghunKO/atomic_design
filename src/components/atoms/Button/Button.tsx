@@ -1,6 +1,6 @@
 import React, { type ReactNode } from 'react';
 import StyledButton, { StyledLinkButton } from "./button.styles";
-import Icon , {type IconsKey} from '../../Icons/Icon'
+import Icon , {type IconsKey} from '@components/Icons/Icon'
 
 
 interface ButtonProps {
