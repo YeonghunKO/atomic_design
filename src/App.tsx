@@ -1,23 +1,56 @@
 import { useState } from 'react';
-import Footer from './components/organism/Footer/Footer';
+import Header from './components/organism/Header/Header';
 function App() {
-  const menu = [
+  const navigation = [
     {
-      title: 'Menu1',
-      item: [{ url: '#', text: 'home' }],
+      title: 'general',
+      items: [
+        {
+          icon: null,
+          text: 'Shop',
+          url: '#',
+        },
+        {
+          icon: null,
+          text: 'About Me',
+          url: '#',
+        },
+        {
+          icon: null,
+          text: 'FAQ',
+          url: '#',
+        },
+        {
+          icon: null,
+          text: 'Contact',
+          url: '#',
+        },
+      ],
     },
     {
-      title: 'Menu2',
-      item: [{ url: '#', text: 'about me' }],
-    },
-    {
-      title: 'Menu3',
-      item: [{ url: '#', text: 'contact' }],
+      title: 'account',
+      items: [
+        {
+          icon: null,
+          text: 'User',
+          url: '#',
+        },
+        {
+          icon: 'User',
+          text: 'Insights',
+          url: '#',
+        },
+        {
+          icon: 'Bag',
+          text: 'Account',
+          url: '#',
+        },
+      ],
     },
   ];
   return (
     <>
-      <Footer menu={menu} />
+      <Header navigation={navigation} />
     </>
   );
 }
