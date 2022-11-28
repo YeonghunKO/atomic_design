@@ -1,4 +1,3 @@
-import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Footer from './Footer';
@@ -25,7 +24,7 @@ const menu = [
   },
 ];
 
-export const FooterDefault = Template.bind({});
-FooterDefault.args = {
+export const Basic = Template.bind({});
+Basic.args = {
   menu,
 };
