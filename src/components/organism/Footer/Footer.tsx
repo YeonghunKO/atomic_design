@@ -4,16 +4,16 @@ import StyledFooter from './Footer.styles';
 
 import type { FooterProps } from '@src/types/Footer';
 
-const Footer = ({ menu }: FooterProps) => {
+const Footer = ({ menus }: FooterProps) => {
   return (
     <StyledFooter>
       <aside className="footer__wrapper">
         <section className="footer__nav__wrapper">
-          {menu.map(({ title, item }, idx) => {
+          {menus.map(({ title, items }, idx) => {
             return (
               <div className="footer__nav" key={`footer__nav__${idx}`}>
                 <h1>{title}</h1>
-                <Nav direction="horizontal" items={item} />
+                <Nav direction="horizontal" items={items} />
               </div>
             );
           })}

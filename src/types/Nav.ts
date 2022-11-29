@@ -2,7 +2,7 @@ import type { IconsKey } from '@components/Icons/Icon';
 
 type NavItem = {
   url: string;
-  text: string;
+  title: string;
   icon?: keyof IconsKey | any;
 };
 

@@ -1,10 +1,12 @@
 type Menu = {
   title: string;
-  item: { url: string; text: string }[];
+  items: { url: string; title: string }[];
 };
 
 interface FooterProps {
-  menu: Menu[];
+  menus: Menu[];
+  label: string;
+  group: string;
 }
 
 export type { FooterProps };

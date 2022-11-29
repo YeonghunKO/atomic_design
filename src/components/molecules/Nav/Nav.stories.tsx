@@ -3,13 +3,13 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Nav from './Nav';
 
 const items = [
-  { url: '#', text: 'home', icon: 'Cart' },
-  { url: '#', text: 'about me' },
-  { url: '#', text: 'contact' },
+  { url: '#', title: 'home', icon: 'Cart' },
+  { url: '#', title: 'about me' },
+  { url: '#', title: 'contact' },
 ];
 
 export default {
-  title: 'Molocules/Nav',
+  title: 'Molecules/Nav',
   component: Nav,
 } as ComponentMeta<typeof Nav>;
 
