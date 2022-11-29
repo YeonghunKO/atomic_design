@@ -20,14 +20,26 @@ const Button = ({
 }: ButtonProps) => {
   if (!href) {
     return (
-      <StyledButton onClick={onClick} variant={variant}>
+      <StyledButton
+        backgroundColor={backgroundColor}
+        onClick={onClick}
+        variant={variant}
+        {...props}
+      >
         <Icon icon={icon!} marginRight="5px" />
         {children}
       </StyledButton>
     );
   }
   return (
-    <StyledLinkButton href={href} variant={variant}>
+    <StyledLinkButton
+      backgroundColor={backgroundColor}
+      onClick={onClick}
+      variant={variant}
+      {...props}
+      href={href}
+    >
+      <Icon icon={icon!} marginRight="5px" />
       {children}
     </StyledLinkButton>
   );
