@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
 
     @media ${device.sm} {
       position: absolute;
-      transform: translateY(5%);
+      transform: translate3d(-50%, 5%, 0);
       left: 50%;
     }
   }
