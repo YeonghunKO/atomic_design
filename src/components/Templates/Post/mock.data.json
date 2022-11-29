@@ -81,7 +81,7 @@
           "label": "Beauty routine"
         },
         "description": "Celtic Elements is a Welsh, Vegan, Wellness brand. We use Welsh natural ingredients from the hillsides & coast of Wales in our Skincare, Body care and Well being ranges.",
-        "image": "https://source.unsplash.com/random/500x300",
+        "image": "http://unsplash.it/1000/400?random&gravity=center",
         "slug": "creating-a-positive-day",
         "title": "Creating a Positive Day"
       },
@@ -91,7 +91,7 @@
           "label": "Beauty routine"
         },
         "description": "Celtic Elements is a Welsh, Vegan, Wellness brand. We use Welsh natural ingredients from the hillsides & coast of Wales in our Skincare, Body care and Well being ranges.",
-        "image": "https://source.unsplash.com/random/500x300",
+        "image": "http://unsplash.it/1000/400?random&gravity=center",
         "slug": "creating-a-positive-day",
         "title": "Creating a Positive Day"
       },
@@ -101,17 +101,7 @@
           "label": "Beauty routine"
         },
         "description": "Celtic Elements is a Welsh, Vegan, Wellness brand. We use Welsh natural ingredients from the hillsides & coast of Wales in our Skincare, Body care and Well being ranges.",
-        "image": "https://source.unsplash.com/random/500x300",
-        "slug": "creating-a-positive-day",
-        "title": "Creating a Positive Day"
-      },
-      {
-        "category": {
-          "href": "/category/beauty-routine",
-          "label": "Beauty routine"
-        },
-        "description": "Celtic Elements is a Welsh, Vegan, Wellness brand. We use Welsh natural ingredients from the hillsides & coast of Wales in our Skincare, Body care and Well being ranges.",
-        "image": "https://source.unsplash.com/random/500x300",
+        "image": "http://unsplash.it/1000/400?random&gravity=center",
         "slug": "creating-a-positive-day",
         "title": "Creating a Positive Day"
       }
