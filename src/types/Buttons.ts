@@ -24,7 +24,7 @@ interface ButtonProps {
   /**
    * Type of button
    */
-  variant?: string;
+  variant?: 'primary' | 'secondary' | 'tertiary';
   icon?: keyof IconsKey;
   [key: string]: any;
 }
