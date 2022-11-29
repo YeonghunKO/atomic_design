@@ -9,22 +9,22 @@ export default {
 
 const Template: ComponentStory<typeof Footer> = args => <Footer {...args} />;
 
-const menu = [
+const menus = [
   {
     title: 'Menu1',
-    item: [{ url: '#', text: 'home' }],
+    items: [{ url: '#', title: 'home' }],
   },
   {
     title: 'Menu2',
-    item: [{ url: '#', text: 'about me' }],
+    items: [{ url: '#', title: 'about me' }],
   },
   {
     title: 'Menu3',
-    item: [{ url: '#', text: 'contact' }],
+    items: [{ url: '#', title: 'contact' }],
   },
 ];
 
 export const Basic = Template.bind({});
 Basic.args = {
-  menu,
+  menus,
 };

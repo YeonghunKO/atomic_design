@@ -15,22 +15,22 @@ const navigation = [
     items: [
       {
         icon: null,
-        text: 'Shop',
+        title: 'Shop',
         url: '#',
       },
       {
         icon: null,
-        text: 'About Me',
+        title: 'About Me',
         url: '#',
       },
       {
         icon: null,
-        text: 'FAQ',
+        title: 'FAQ',
         url: '#',
       },
       {
         icon: null,
-        text: 'Contact',
+        title: 'Contact',
         url: '#',
       },
     ],
@@ -40,17 +40,17 @@ const navigation = [
     items: [
       {
         icon: null,
-        text: 'User',
+        title: 'User',
         url: '#',
       },
       {
         icon: 'User',
-        text: 'Insights',
+        title: 'Insights',
         url: '#',
       },
       {
         icon: 'Bag',
-        text: 'Account',
+        title: 'Account',
         url: '#',
       },
     ],
