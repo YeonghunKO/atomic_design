@@ -1,6 +1,7 @@
 import { css, DefaultTheme } from 'styled-components';
 
 const Theme: DefaultTheme = {
+  /* layout */
   flexCenter: css`
     display: flex;
     justify-content: center;
