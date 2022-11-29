@@ -1,4 +1,4 @@
-type ItemKey = 'url' | 'text' | 'icon';
+type ItemKey = 'url' | 'title' | 'icon';
 
 type HeaderNavigation = {
   title: string;
@@ -7,6 +7,8 @@ type HeaderNavigation = {
 
 interface HeaderProps {
   navigation: HeaderNavigation[];
+  label: string;
+  group: string;
 }
 
 export type { HeaderProps, HeaderNavigation };
