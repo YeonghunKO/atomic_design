@@ -3,6 +3,7 @@ import Header from '@src/components/organism/Header/Header';
 import Footer from '@src/components/organism/Footer/Footer';
 import type { PostProps } from '@src/types/Post';
 import PostContent from '@src/components/molecules/PostContent/PostContent';
+import Banner from '@src/components/organism/Banner/Banner';
 
 const Post = ({ header, footer, related, banner, postContent }: PostProps) => {
   console.log(header);
@@ -11,6 +12,7 @@ const Post = ({ header, footer, related, banner, postContent }: PostProps) => {
     <StyledPost>
       <Header {...header} />
       <PostContent {...postContent} />
+      <Banner {...banner} />
       <Footer {...footer} />
     </StyledPost>
   );
