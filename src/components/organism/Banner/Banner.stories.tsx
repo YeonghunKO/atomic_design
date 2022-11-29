@@ -6,12 +6,7 @@ import Banner from './Banner';
 export default {
   title: 'Organism/Banner',
   component: Banner,
-  argTypes: {
-    variant: {
-      options: ['primary', 'secondary', 'tertiary'],
-      control: { type: 'select' },
-    },
-  },
+  argTypes: {},
 } as ComponentMeta<typeof Banner>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
