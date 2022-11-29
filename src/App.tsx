@@ -1,56 +1,10 @@
-import { useState } from 'react';
-import Header from './components/organism/Header/Header';
+import Post from './components/Templates/Post/Post';
+import postData from '@components/Templates/Post/mock.data.json';
+
 function App() {
-  const navigation = [
-    {
-      title: 'general',
-      items: [
-        {
-          icon: null,
-          text: 'Shop',
-          url: '#',
-        },
-        {
-          icon: null,
-          text: 'About Me',
-          url: '#',
-        },
-        {
-          icon: null,
-          text: 'FAQ',
-          url: '#',
-        },
-        {
-          icon: null,
-          text: 'Contact',
-          url: '#',
-        },
-      ],
-    },
-    {
-      title: 'account',
-      items: [
-        {
-          icon: null,
-          text: 'User',
-          url: '#',
-        },
-        {
-          icon: 'User',
-          text: 'Insights',
-          url: '#',
-        },
-        {
-          icon: 'Bag',
-          text: 'Account',
-          url: '#',
-        },
-      ],
-    },
-  ];
   return (
     <>
-      <Header navigation={navigation} />
+      <Post {...postData} />
     </>
   );
 }
