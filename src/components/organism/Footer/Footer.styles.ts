@@ -1,3 +1,4 @@
+import { device } from '@src/components/particles/MediaQueries';
 import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
@@ -12,11 +13,21 @@ const StyledFooter = styled.footer`
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    flex-direction: column;
+
+    @media ${device.sm} {
+      flex-direction: row;
+    }
 
     .footer__nav__wrapper {
       display: flex;
       justify-content: space-around;
-      flex-grow: 0.6;
+      width: 100%;
+
+      @media ${device.sm} {
+        flex-grow: 0.6;
+        width: auto;
+      }
 
       .footer__nav {
         ${({ theme }) => theme.flexColumn}
@@ -24,8 +35,14 @@ const StyledFooter = styled.footer`
         align-items: center;
       }
     }
+
     .footer__news-letter {
       flex-grow: 0.2;
+      text-align: center;
+      width: 100%;
+      @media ${device.sm} {
+        width: auto;
+      }
     }
   }
   .footer__copy-right {

@@ -1,3 +1,4 @@
+import { device } from '@src/components/particles/MediaQueries';
 import styled from 'styled-components';
 
 const StyledRelated = styled.section`
@@ -5,6 +6,7 @@ const StyledRelated = styled.section`
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  text-align: center;
 
   h5 {
     color: ${({ theme }) => theme.grey500};
@@ -15,9 +17,14 @@ const StyledRelated = styled.section`
   }
 
   .related__article__wrapper {
-    ${({ theme }) => theme.flexCenter};
     padding: 1rem;
     gap: 1rem;
+
+    ${({ theme }) => theme.flexColumn};
+
+    @media ${device.sm} {
+      flex-direction: row;
+    }
   }
 
   .related__article {
