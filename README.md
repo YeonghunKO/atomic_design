@@ -15,3 +15,6 @@ npm run dev
 
 # 스토리북 배포
 [배포 주소](https://6386efc391c64bd752ceadc1-waxwffsqls.chromatic.com/?path=/story/template-post--basic)
+
+# 참고 자료
+https://www.youtube.com/playlist?list=PL0TiIcOKyEAlL7mIvbJ-FICU5EF9yfUh6
