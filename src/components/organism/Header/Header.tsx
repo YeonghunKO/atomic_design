@@ -5,7 +5,7 @@ import Nav from '@src/components/molecules/Nav/Nav';
 import Button from '@src/components/atoms/Button/Button';
 import type { HeaderProps } from '@src/types/Header';
 
-const Header = ({ navigation }: HeaderProps) => {
+const Header = ({ navigation, ...props }: HeaderProps) => {
   const [isMenu, setIsMenu] = useState(false);
 
   const onButton = () => {
